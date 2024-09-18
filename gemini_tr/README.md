@@ -18,7 +18,8 @@ Gemini를 활용한 나만의 논문 번역기
 - `main.py` : 논문 번역 및 요약
 - `requirements.txt` : 모든 패키지 .txt 파일에 포함
 - `translated_result.txt` : 예시 논문 번역 및 요약 결과
----
+
+
 다음 명령을 실행하면 모든 패키지를 한 번에 설치
     
     pip install -r requirements.txt
