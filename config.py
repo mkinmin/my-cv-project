@@ -1,0 +1,2 @@
+class Config :
+    GOOGLE_API_KEY = 'AIzaSyDor5WVCIGVZVEPTG4AfUsXA-u6n2bzLYg'
