@@ -28,6 +28,6 @@ Use Gemini API
     pip install -r requirements.txt
 
 ## 참고 및 출처
-1. [Gemini API 설명]<https://ai.google.dev/gemini-api/docs/text-generation?hl=ko&lang=python>
-2. [pdf 파일 업로드 code]<https://medium.com/@woyera/how-i-use-gemini-on-my-pdf-files-using-python-50f4eaba4f0b>
-3. [구글 AI Gemini API 사용하기]<https://luvris2.tistory.com/880>
+1. Gemini API 설명 : <https://ai.google.dev/gemini-api/docs/text-generation?hl=ko&lang=python>
+2. pdf 파일 업로드 code : <https://medium.com/@woyera/how-i-use-gemini-on-my-pdf-files-using-python-50f4eaba4f0b>
+3. 구글 AI Gemini API 사용하기 : <https://luvris2.tistory.com/880>
