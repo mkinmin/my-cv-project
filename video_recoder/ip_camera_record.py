@@ -1,8 +1,23 @@
 import cv2 as cv
 import os
 
-# VideoCapture 객체 생성 (기본 카메라)
-cap = cv.VideoCapture(0)
+# 카메라 선택 기능 추가
+def select_camera():
+    print("카메라 선택:")
+    print("1: 로컬 카메라")
+    print("2: IP 카메라 (RTSP)")
+    choice = input("사용할 카메라를 선택하세요 (1/2): ")
+    if choice == '1':
+        return cv.VideoCapture(0)  # 로컬 카메라 선택
+    elif choice == '2':
+        rtsp_url = "rtsp://210.99.70.120:1935/live/cctv001.stream"  # IP 카메라 RTSP 주소
+        return cv.VideoCapture(rtsp_url)  # IP 카메라 선택
+    else:
+        print("잘못된 입력입니다. 기본적으로 로컬 카메라를 사용합니다.")
+        return cv.VideoCapture(0)
+
+# VideoCapture 객체 생성 (사용자 선택 카메라)
+cap = select_camera()
 
 # 녹화 모드 여부를 확인하는 변수
 is_recording = False
@@ -18,7 +33,9 @@ if not os.path.exists(save_path):
 filename = os.path.join(save_path, 'output.avi')  # 파일 이름
 fourcc = cv.VideoWriter_fourcc(*'XVID')  # 코덱 설정
 fps = 20.0  # 초당 프레임 수
-frame_size = (int(cap.get(3)), int(cap.get(4)))  # 프레임 크기 (카메라 해상도)
+
+# 카메라 해상도 설정 (기본 값 사용)
+frame_size = (int(cap.get(3)), int(cap.get(4)))
 
 # 무한 루프 (카메라 피드 처리)
 while True:
