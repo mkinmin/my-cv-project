@@ -12,12 +12,12 @@ OpenCV를 이용하여 컴퓨터의 웹캠이나 카메라 영상을 녹화하�
 
 - 'Space' 키를 눌러 '녹화시작 및 녹화종료
 - 1~6번을 눌러 원하는 필터 적용
-    1. Original
-    2. GrayScale filter(흑백)
-    3. Gaussian Blur filter
-    4. Canny Edge detector filter
-    5. Sepia tone filter
-    6. Mirror effect filter
+1. Original
+2. GrayScale filter
+3. Gaussian Blur filter
+4. Canny Edge detector filter
+5. Sepia tone filter
+6. Mirror effect filter
     
 - 'ESC'를 누를 경우 녹화 화면 종료
 

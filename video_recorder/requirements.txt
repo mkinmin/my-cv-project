@@ -1,4 +1,4 @@
-ipykernel @ file:///D:/bld/ipykernel_1719845595208/work
-ipython @ file:///D:/bld/ipython_1701831845989/work
+ipykernel==6.29.5
+ipython==8.18.1
 numpy==2.0.2
 opencv-python==4.10.0.84
