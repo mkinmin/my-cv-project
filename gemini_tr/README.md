@@ -1,4 +1,4 @@
-# My Own Paper Translator with Gemini
+# "Gemini"를 활용한 나만의 논문 번역기
 Use Gemini API
 
 ## 프로젝트 소개
